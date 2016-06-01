@@ -13,6 +13,10 @@
 		FEDEA0791CF7586A00298B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA0771CF7586A00298B10 /* Main.storyboard */; };
 		FEDEA07B1CF7586A00298B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA07A1CF7586A00298B10 /* Assets.xcassets */; };
 		FEDEA07E1CF7586A00298B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDEA07C1CF7586A00298B10 /* LaunchScreen.storyboard */; };
+		FEF57B5A1CFF4D78006D8BFF /* HaHaController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF57B591CFF4D78006D8BFF /* HaHaController.m */; };
+		FEF57B5D1CFF4D93006D8BFF /* HeHeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF57B5C1CFF4D93006D8BFF /* HeHeController.m */; };
+		FEF57B601CFF4DA2006D8BFF /* HeiHeiController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF57B5F1CFF4DA2006D8BFF /* HeiHeiController.m */; };
+		FEF57B631CFF4DB4006D8BFF /* YeYeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF57B621CFF4DB4006D8BFF /* YeYeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		FEDEA07A1CF7586A00298B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEDEA07D1CF7586A00298B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEDEA07F1CF7586A00298B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF57B581CFF4D78006D8BFF /* HaHaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HaHaController.h; sourceTree = "<group>"; };
+		FEF57B591CFF4D78006D8BFF /* HaHaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HaHaController.m; sourceTree = "<group>"; };
+		FEF57B5B1CFF4D93006D8BFF /* HeHeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeHeController.h; sourceTree = "<group>"; };
+		FEF57B5C1CFF4D93006D8BFF /* HeHeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeHeController.m; sourceTree = "<group>"; };
+		FEF57B5E1CFF4DA2006D8BFF /* HeiHeiController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeiHeiController.h; sourceTree = "<group>"; };
+		FEF57B5F1CFF4DA2006D8BFF /* HeiHeiController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeiHeiController.m; sourceTree = "<group>"; };
+		FEF57B611CFF4DB4006D8BFF /* YeYeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YeYeController.h; sourceTree = "<group>"; };
+		FEF57B621CFF4DB4006D8BFF /* YeYeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YeYeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +54,10 @@
 		FEDEA0621CF7586A00298B10 = {
 			isa = PBXGroup;
 			children = (
+				FEF57B521CFF4A5E006D8BFF /* 哈哈 */,
+				FEF57B511CFF4A5E006D8BFF /* 呵呵 */,
+				FEF57B551CFF4A5E006D8BFF /* 嘿嘿 */,
+				FEF57B561CFF4A5E006D8BFF /* 耶耶 */,
 				FEDEA06D1CF7586A00298B10 /* TestTabBar */,
 				FEDEA06C1CF7586A00298B10 /* Products */,
 			);
@@ -77,6 +93,42 @@
 				FEDEA06F1CF7586A00298B10 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF57B511CFF4A5E006D8BFF /* 呵呵 */ = {
+			isa = PBXGroup;
+			children = (
+				FEF57B5B1CFF4D93006D8BFF /* HeHeController.h */,
+				FEF57B5C1CFF4D93006D8BFF /* HeHeController.m */,
+			);
+			path = "呵呵";
+			sourceTree = "<group>";
+		};
+		FEF57B521CFF4A5E006D8BFF /* 哈哈 */ = {
+			isa = PBXGroup;
+			children = (
+				FEF57B581CFF4D78006D8BFF /* HaHaController.h */,
+				FEF57B591CFF4D78006D8BFF /* HaHaController.m */,
+			);
+			path = "哈哈";
+			sourceTree = "<group>";
+		};
+		FEF57B551CFF4A5E006D8BFF /* 嘿嘿 */ = {
+			isa = PBXGroup;
+			children = (
+				FEF57B5E1CFF4DA2006D8BFF /* HeiHeiController.h */,
+				FEF57B5F1CFF4DA2006D8BFF /* HeiHeiController.m */,
+			);
+			path = "嘿嘿";
+			sourceTree = "<group>";
+		};
+		FEF57B561CFF4A5E006D8BFF /* 耶耶 */ = {
+			isa = PBXGroup;
+			children = (
+				FEF57B611CFF4DB4006D8BFF /* YeYeController.h */,
+				FEF57B621CFF4DB4006D8BFF /* YeYeController.m */,
+			);
+			path = "耶耶";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF57B631CFF4DB4006D8BFF /* YeYeController.m in Sources */,
 				FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */,
+				FEF57B5D1CFF4D93006D8BFF /* HeHeController.m in Sources */,
+				FEF57B5A1CFF4D78006D8BFF /* HaHaController.m in Sources */,
+				FEF57B601CFF4DA2006D8BFF /* HeiHeiController.m in Sources */,
 				FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */,
 				FEDEA0701CF7586A00298B10 /* main.m in Sources */,
 			);
@@ -302,6 +358,7 @@
 				FEDEA0841CF7586A00298B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
