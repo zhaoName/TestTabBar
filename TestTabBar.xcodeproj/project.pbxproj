@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FE0F57361D014F8400AB6C6F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F57351D014F8400AB6C6F /* Login.storyboard */; };
+		FE0F573A1D01607D00AB6C6F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57391D01607D00AB6C6F /* LoginViewController.m */; };
+		FE0F57411D01743300AB6C6F /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */; };
+		FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */; };
+		FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57461D01748D00AB6C6F /* RegisterViewController.m */; };
 		FEDEA0701CF7586A00298B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA06F1CF7586A00298B10 /* main.m */; };
 		FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0721CF7586A00298B10 /* AppDelegate.m */; };
 		FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0751CF7586A00298B10 /* ViewController.m */; };
@@ -22,6 +26,14 @@
 
 /* Begin PBXFileReference section */
 		FE0F57351D014F8400AB6C6F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		FE0F57381D01607D00AB6C6F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FE0F57391D01607D00AB6C6F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FE0F573F1D01743300AB6C6F /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		FE0F57421D01743A00AB6C6F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FE0F57451D01748D00AB6C6F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		FE0F57461D01748D00AB6C6F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		FEDEA06B1CF7586A00298B10 /* TestTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDEA06F1CF7586A00298B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEDEA0711CF7586A00298B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,11 +65,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE0F57371D01606000AB6C6F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F57381D01607D00AB6C6F /* LoginViewController.h */,
+				FE0F57391D01607D00AB6C6F /* LoginViewController.m */,
+				FE0F57451D01748D00AB6C6F /* RegisterViewController.h */,
+				FE0F57461D01748D00AB6C6F /* RegisterViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FE0F573E1D01742500AB6C6F /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+				FE0F573F1D01743300AB6C6F /* IQKeyboardManager.h */,
+				FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */,
+				FE0F57421D01743A00AB6C6F /* MBProgressHUD.h */,
+				FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */,
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
 		FEDEA0621CF7586A00298B10 = {
 			isa = PBXGroup;
 			children = (
 				FE0F57351D014F8400AB6C6F /* Login.storyboard */,
 				FEDEA0771CF7586A00298B10 /* Main.storyboard */,
+				FE0F573E1D01742500AB6C6F /* ThirdLib */,
+				FE0F57371D01606000AB6C6F /* Login */,
 				FEF57B521CFF4A5E006D8BFF /* 哈哈 */,
 				FEF57B511CFF4A5E006D8BFF /* 呵呵 */,
 				FEF57B551CFF4A5E006D8BFF /* 嘿嘿 */,
@@ -205,11 +241,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */,
+				FE0F57411D01743300AB6C6F /* IQKeyboardManager.m in Sources */,
+				FE0F573A1D01607D00AB6C6F /* LoginViewController.m in Sources */,
 				FEF57B631CFF4DB4006D8BFF /* YeYeController.m in Sources */,
 				FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */,
 				FEF57B5D1CFF4D93006D8BFF /* HeHeController.m in Sources */,
 				FEF57B5A1CFF4D78006D8BFF /* HaHaController.m in Sources */,
 				FEF57B601CFF4DA2006D8BFF /* HeiHeiController.m in Sources */,
+				FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */,
 				FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */,
 				FEDEA0701CF7586A00298B10 /* main.m in Sources */,
 			);

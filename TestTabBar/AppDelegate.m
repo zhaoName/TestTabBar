@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "IQKeyboardManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    LoginViewController *loginVC = [story instantiateViewControllerWithIdentifier:@"LoginViewController"];
+    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    self.window.rootViewController = na;
+    
+    [[IQKeyboardManager sharedManager] setEnable:YES];
+    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 30;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
