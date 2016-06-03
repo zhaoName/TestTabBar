@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0F57361D014F8400AB6C6F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F57351D014F8400AB6C6F /* Login.storyboard */; };
 		FEDEA0701CF7586A00298B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA06F1CF7586A00298B10 /* main.m */; };
 		FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0721CF7586A00298B10 /* AppDelegate.m */; };
 		FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0751CF7586A00298B10 /* ViewController.m */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE0F57351D014F8400AB6C6F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FEDEA06B1CF7586A00298B10 /* TestTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDEA06F1CF7586A00298B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEDEA0711CF7586A00298B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		FEDEA0621CF7586A00298B10 = {
 			isa = PBXGroup;
 			children = (
+				FE0F57351D014F8400AB6C6F /* Login.storyboard */,
+				FEDEA0771CF7586A00298B10 /* Main.storyboard */,
 				FEF57B521CFF4A5E006D8BFF /* 哈哈 */,
 				FEF57B511CFF4A5E006D8BFF /* 呵呵 */,
 				FEF57B551CFF4A5E006D8BFF /* 嘿嘿 */,
@@ -78,7 +82,6 @@
 				FEDEA0721CF7586A00298B10 /* AppDelegate.m */,
 				FEDEA0741CF7586A00298B10 /* ViewController.h */,
 				FEDEA0751CF7586A00298B10 /* ViewController.m */,
-				FEDEA0771CF7586A00298B10 /* Main.storyboard */,
 				FEDEA07A1CF7586A00298B10 /* Assets.xcassets */,
 				FEDEA07C1CF7586A00298B10 /* LaunchScreen.storyboard */,
 				FEDEA07F1CF7586A00298B10 /* Info.plist */,
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0F57361D014F8400AB6C6F /* Login.storyboard in Resources */,
 				FEDEA07E1CF7586A00298B10 /* LaunchScreen.storyboard in Resources */,
 				FEDEA07B1CF7586A00298B10 /* Assets.xcassets in Resources */,
 				FEDEA0791CF7586A00298B10 /* Main.storyboard in Resources */,
@@ -220,6 +224,7 @@
 				FEDEA0781CF7586A00298B10 /* Base */,
 			);
 			name = Main.storyboard;
+			path = TestTabBar;
 			sourceTree = "<group>";
 		};
 		FEDEA07C1CF7586A00298B10 /* LaunchScreen.storyboard */ = {

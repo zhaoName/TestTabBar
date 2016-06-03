@@ -38,7 +38,7 @@
                             <tableViewSection id="eBE-Zm-txI">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ES5-IQ-YuT">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ES5-IQ-YuT" id="z0I-yJ-xGj">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -46,7 +46,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Z5I-R8-eGb">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5I-R8-eGb" id="Mw1-9S-tXx">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -54,7 +54,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qk8-rg-GOr">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qk8-rg-GOr" id="9z3-cP-Y5f">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -74,7 +74,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rc2-44-1sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256.5" y="-128.25"/>
+            <point key="canvasLocation" x="-1042" y="-155"/>
         </scene>
         <!--呵呵-->
         <scene sceneID="YHH-AB-Tez">
@@ -104,13 +104,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIA-We-VPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241.5" y="386.25"/>
+            <point key="canvasLocation" x="-1059" y="522"/>
         </scene>
         <!--呵呵-->
         <scene sceneID="One-DQ-CxW">
             <objects>
                 <navigationController id="1m6-FI-3oz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="呵呵" id="3ab-JV-quM"/>
+                    <tabBarItem key="tabBarItem" title="呵呵" image="deal" selectedImage="deal_selected" id="3ab-JV-quM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="u2c-TS-pf1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -122,7 +122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLC-mc-0dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-688.5" y="386.25"/>
+            <point key="canvasLocation" x="-1715" y="476"/>
         </scene>
         <!--嘿嘿-->
         <scene sceneID="lKS-80-6o1">
@@ -152,13 +152,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGf-zi-mRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231" y="920.25"/>
+            <point key="canvasLocation" x="-1075.5" y="1167"/>
         </scene>
         <!--嘿嘿-->
         <scene sceneID="wIU-er-nEi">
             <objects>
                 <navigationController id="nqF-Be-aKI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="嘿嘿" id="xxb-TN-iyH"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="嘿嘿" image="record" selectedImage="deal_selected" id="xxb-TN-iyH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJT-11-MOR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -170,7 +170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdi-EN-5FZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-699" y="920.25"/>
+            <point key="canvasLocation" x="-1735" y="1160"/>
         </scene>
         <!--耶耶-->
         <scene sceneID="ZSg-aw-tdB">
@@ -200,13 +200,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iP-iy-SsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="1439.25"/>
+            <point key="canvasLocation" x="-1242" y="1867"/>
         </scene>
         <!--耶耶-->
         <scene sceneID="sx2-8H-6FC">
             <objects>
                 <navigationController id="lEH-ol-zOB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="耶耶" id="tHK-7L-c26"/>
+                    <tabBarItem key="tabBarItem" title="耶耶" image="me" selectedImage="deal_selected" id="tHK-7L-c26"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NCP-ev-8Tc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -218,13 +218,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7p-lZ-ejW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-699" y="1432.5"/>
+            <point key="canvasLocation" x="-1824" y="1866.75"/>
         </scene>
         <!--哈哈-->
         <scene sceneID="0vQ-8Y-3fJ">
             <objects>
                 <navigationController id="YH7-1i-0C9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="哈哈" id="erY-J9-p4f"/>
+                    <tabBarItem key="tabBarItem" title="哈哈" image="currency" selectedImage="currency_selected" id="erY-J9-p4f"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="StX-sc-i8H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -236,7 +236,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DhM-Hg-BZq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663" y="-135.75"/>
+            <point key="canvasLocation" x="-1761" y="-202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="currency" width="19" height="19"/>
+        <image name="currency_selected" width="19" height="19"/>
+        <image name="deal" width="19" height="19"/>
+        <image name="deal_selected" width="19" height="19"/>
+        <image name="me" width="19" height="19"/>
+        <image name="record" width="19" height="19"/>
+    </resources>
 </document>
