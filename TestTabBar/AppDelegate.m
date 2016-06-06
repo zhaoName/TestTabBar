@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "IQKeyboardManager.h"
+#import "RootTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,13 +23,23 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
-    LoginViewController *loginVC = [story instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:loginVC];
-    self.window.rootViewController = na;
+    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"phone"] && [[NSUserDefaults standardUserDefaults] objectForKey:@"password"])
+    {
+        UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        RootTabBarViewController *rootTabBar = [board instantiateViewControllerWithIdentifier:@"RootTabBarViewController"];
+        self.window.rootViewController = rootTabBar;
+    }
+    else
+    {
+        UIStoryboard *story = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+        LoginViewController *loginVC = [story instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        UINavigationController *na = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        self.window.rootViewController = na;
+    }
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"phone"]);
     
     [[IQKeyboardManager sharedManager] setEnable:YES];
-    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 30;
+    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 50.0;
     
     [self.window makeKeyAndVisible];
     

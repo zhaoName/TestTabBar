@@ -255,6 +255,8 @@
                     <connections>
                         <outlet property="backView" destination="Vnq-yo-pRV" id="SwR-8U-XPJ"/>
                         <outlet property="loginBtn" destination="G3R-oc-tT8" id="GBg-pz-BDU"/>
+                        <outlet property="passwordTextField" destination="ffY-8L-8rL" id="gwN-7f-okU"/>
+                        <outlet property="phoneTextField" destination="Gi8-Pn-Gvi" id="7zP-5y-eZN"/>
                         <outlet property="registerBtn" destination="6OS-sg-hbS" id="6sA-XR-UCL"/>
                     </connections>
                 </viewController>
