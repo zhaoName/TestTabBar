@@ -10,6 +10,8 @@
 #import "HaHaController.h"
 #import "RootTabBarViewController.h"
 
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface LoginViewController ()<UIScrollViewDelegate>
 
@@ -40,15 +42,30 @@
     self.backView.layer.cornerRadius = 5.0;
     self.backView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     
-    
     [self playGuidePage];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+
 - (void)playGuidePage
 {
+    [self.view addSubview:self.scrollView];
     for (int i=0; i<3; i++)
     {
-        UIImageView *guideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width * (i+1), [UIScreen mainScreen].bounds.size.height)];
+        UIImageView *guideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(WIDTH * i, 0, WIDTH, HEIGHT)];
         
         guideImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"yindaoye%d", i+1]];
         
@@ -58,25 +75,13 @@
     [self.scrollView bringSubviewToFront:self.view];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     
 }
 
-#pragma mark -- 登录注册
+#pragma mark -- 登录/注册
 - (IBAction)touchLoginButton:(UIButton *)sender
 {
     if(self.phoneTextField.text && self.passwordTextField.text)
@@ -88,6 +93,8 @@
         UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         RootTabBarViewController *rootTabBar = [board instantiateViewControllerWithIdentifier:@"RootTabBarViewController"];
         
+        //模态试图推入效果
+        rootTabBar.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
         [self presentViewController:rootTabBar animated:YES completion:nil];
     }
 }
@@ -107,12 +114,17 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         
-        _scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * 3, [UIScreen mainScreen].bounds.size.height);
+        _scrollView.contentSize = CGSizeMake(WIDTH * 3, HEIGHT);
         _scrollView.delegate = self;
         _scrollView.backgroundColor = [UIColor lightGrayColor];
-        [self.view addSubview:self.scrollView];
     }
     return _scrollView;
+}
+
+//点击空白处键盘会自动收起
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
 }
 
 

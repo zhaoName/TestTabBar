@@ -100,12 +100,12 @@
                                         <exclude reference="p9Q-Yn-lpn"/>
                                         <exclude reference="tIG-Hb-oWb"/>
                                         <exclude reference="wtu-aT-Gbp"/>
-                                        <exclude reference="65T-Le-gEU"/>
-                                        <exclude reference="Obp-G4-q9W"/>
-                                        <exclude reference="bVQ-J5-KYG"/>
                                         <exclude reference="RLE-Fr-06i"/>
                                         <exclude reference="kYK-6r-cT0"/>
                                         <exclude reference="uha-nn-xTd"/>
+                                        <exclude reference="65T-Le-gEU"/>
+                                        <exclude reference="Obp-G4-q9W"/>
+                                        <exclude reference="bVQ-J5-KYG"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -119,12 +119,12 @@
                                         <include reference="p9Q-Yn-lpn"/>
                                         <include reference="tIG-Hb-oWb"/>
                                         <include reference="wtu-aT-Gbp"/>
-                                        <include reference="65T-Le-gEU"/>
-                                        <include reference="Obp-G4-q9W"/>
-                                        <include reference="bVQ-J5-KYG"/>
                                         <include reference="RLE-Fr-06i"/>
                                         <include reference="kYK-6r-cT0"/>
                                         <include reference="uha-nn-xTd"/>
+                                        <include reference="65T-Le-gEU"/>
+                                        <include reference="Obp-G4-q9W"/>
+                                        <include reference="bVQ-J5-KYG"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -216,17 +216,17 @@
                                 <exclude reference="6OS-sg-hbS"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="gpg-2B-wvq"/>
-                                <exclude reference="sdh-FX-zfm"/>
-                                <exclude reference="JfR-XD-xtL"/>
-                                <exclude reference="SKN-J1-j9C"/>
-                                <exclude reference="Wn2-2t-KMs"/>
-                                <exclude reference="CGC-eo-lkH"/>
-                                <exclude reference="DJq-no-S6l"/>
-                                <exclude reference="rUr-f9-TgE"/>
                                 <exclude reference="16i-Ps-IHz"/>
                                 <exclude reference="T4D-mr-TpD"/>
                                 <exclude reference="giR-5h-OOY"/>
+                                <exclude reference="CGC-eo-lkH"/>
+                                <exclude reference="DJq-no-S6l"/>
+                                <exclude reference="rUr-f9-TgE"/>
+                                <exclude reference="JfR-XD-xtL"/>
+                                <exclude reference="SKN-J1-j9C"/>
+                                <exclude reference="Wn2-2t-KMs"/>
+                                <exclude reference="gpg-2B-wvq"/>
+                                <exclude reference="sdh-FX-zfm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -237,17 +237,17 @@
                                 <include reference="6OS-sg-hbS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="gpg-2B-wvq"/>
-                                <include reference="sdh-FX-zfm"/>
-                                <include reference="JfR-XD-xtL"/>
-                                <include reference="SKN-J1-j9C"/>
-                                <include reference="Wn2-2t-KMs"/>
-                                <include reference="CGC-eo-lkH"/>
-                                <include reference="DJq-no-S6l"/>
-                                <include reference="rUr-f9-TgE"/>
                                 <include reference="16i-Ps-IHz"/>
                                 <include reference="T4D-mr-TpD"/>
                                 <include reference="giR-5h-OOY"/>
+                                <include reference="CGC-eo-lkH"/>
+                                <include reference="DJq-no-S6l"/>
+                                <include reference="rUr-f9-TgE"/>
+                                <include reference="JfR-XD-xtL"/>
+                                <include reference="SKN-J1-j9C"/>
+                                <include reference="Wn2-2t-KMs"/>
+                                <include reference="gpg-2B-wvq"/>
+                                <include reference="sdh-FX-zfm"/>
                             </mask>
                         </variation>
                     </view>
@@ -273,6 +273,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gYo-8B-oKL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yh8-Nf-MIY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17u-2I-V5u">
@@ -287,8 +288,7 @@
                                         <exclude reference="H9A-Oq-PET"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="99" width="280" height="30"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="H9A-Oq-PET"/>
                                     </mask>
@@ -298,9 +298,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="160" width="195" height="30"/>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-mC-ypS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -317,12 +314,15 @@
                                         <exclude reference="A7r-4W-BOS"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="253" width="280" height="53"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="A7r-4W-BOS"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="touchRegisterButton:" destination="Y9v-AQ-1wc" eventType="touchUpInside" id="3z2-tm-mWC"/>
+                                    <segue destination="kEG-Qw-Z5a" kind="show" id="CyQ-qt-lDJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-PD-WrP">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -340,9 +340,8 @@
                                         <exclude reference="o8H-k2-kCn"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                    <rect key="frame" x="218" y="162" width="82" height="25"/>
                                     <mask key="constraints">
                                         <include reference="JNa-Tn-0be"/>
                                         <include reference="o8H-k2-kCn"/>
@@ -350,7 +349,7 @@
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5A1-PD-WrP" firstAttribute="trailing" secondItem="Yh8-Nf-MIY" secondAttribute="trailingMargin" id="3e1-sL-MTV"/>
                             <constraint firstItem="17u-2I-V5u" firstAttribute="leading" secondItem="Yh8-Nf-MIY" secondAttribute="leadingMargin" id="4cA-yN-10A"/>
@@ -413,10 +412,34 @@
                     <navigationItem key="navigationItem" title="注册新用户" id="yXw-Qv-MR4"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ftf-5d-XaL" id="Rac-S9-bBb"/>
+                        <outlet property="phoneTextField" destination="17u-2I-V5u" id="c99-qm-Q41"/>
+                        <outlet property="registerButton" destination="0dZ-mC-ypS" id="Oek-by-Plh"/>
+                        <outlet property="verificationCodeLabel" destination="5A1-PD-WrP" id="wtM-JR-kvO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGn-3d-EiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997.5" y="480.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RJg-5l-r87">
+            <objects>
+                <viewController id="kEG-Qw-Z5a" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zLd-Rs-kgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="mFq-k7-c4T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SIs-8g-Tqf">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffO-QV-c3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653" y="480.75"/>
         </scene>
     </scenes>
     <resources>
