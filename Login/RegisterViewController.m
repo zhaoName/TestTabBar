@@ -7,9 +7,9 @@
 //
 
 #import "RegisterViewController.h"
+#import "countdown.h"
 
 static NSMutableDictionary *timeIntervalDict;
-static NSMutableDictionary *timersDict;
 
 
 @interface RegisterViewController ()
@@ -26,6 +26,11 @@ static NSMutableDictionary *timersDict;
 @end
 
 @implementation RegisterViewController
+
+- (void)viewDidLayoutSubviews
+{
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,10 +50,6 @@ static NSMutableDictionary *timersDict;
     {
         timeIntervalDict = [[NSMutableDictionary alloc] init];
     }
-    if(!timersDict)
-    {
-        timersDict = [[NSMutableDictionary alloc] init];
-    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -62,12 +63,7 @@ static NSMutableDictionary *timersDict;
 {
     [super viewWillDisappear:animated];
     
-    if(timersDict)
-    {
-        NSTimer *timer = [timersDict objectForKey:@"timer"];
-        [timer invalidate];
-        [timersDict removeObjectForKey:@"timer"];
-    }
+    [self.timer invalidate];
 }
 
 - (void)sendVerificationCode:(UITapGestureRecognizer *)tap
@@ -75,13 +71,13 @@ static NSMutableDictionary *timersDict;
     [timeIntervalDict setObject:[NSDate date] forKey:@"startDate"];
     
     [self startTimer];
+    
+    //[countdown startTimerWithKey:@"startTime" andLabel:self.verificationCodeLabel];
 }
 
 - (void)startTimer
 {
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(cutDownTime:) userInfo:nil repeats:YES];
-    
-    [timersDict setObject:self.timer forKey:@"timer"];
 }
 
 - (void)cutDownTime:(NSTimer *)time

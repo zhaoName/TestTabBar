@@ -12,6 +12,6 @@
 @interface countdown : NSObject
 
 
-+ (dispatch_source_t)showCountdownOnLabel:(UILabel *)timeLabel;
++ (dispatch_source_t)startTimerWithKey:(NSString *)timeKey andLabel:(UILabel *)timeLabel;
 
 @end
