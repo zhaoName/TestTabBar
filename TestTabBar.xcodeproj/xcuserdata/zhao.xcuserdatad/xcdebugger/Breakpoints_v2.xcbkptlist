@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Login/RegisterViewController.m"
-            timestampString = "486958839.242753"
+            filePath = "Login/GuideViewController.m"
+            timestampString = "487481362.506747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "-cutDownTime:"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "-scrollViewDidScroll:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

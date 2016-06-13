@@ -21,17 +21,14 @@
     
 }
 
-#pragma mark - Table view data source
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)touchQuitButton:(UIButton *)sender
+{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"phone"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"password"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    self.tabBarController.tabBar.hidden = YES; 
 }
-*/
 
 @end

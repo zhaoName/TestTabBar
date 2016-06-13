@@ -262,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vse-GV-2Dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313.5" y="480.75"/>
+            <point key="canvasLocation" x="247.5" y="480.75"/>
         </scene>
         <!--注册新用户-->
         <scene sceneID="Vlo-Y9-lcs">
@@ -432,6 +432,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mFq-k7-c4T"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SIs-8g-Tqf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

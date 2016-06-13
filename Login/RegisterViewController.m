@@ -55,9 +55,7 @@ static NSMutableDictionary *timersDict;
 {
     [super viewWillAppear:animated];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(cutDownTime:) userInfo:nil repeats:YES];
-    
-    [self cutDownTime: self.timer];
+    [self startTimer];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -68,14 +66,19 @@ static NSMutableDictionary *timersDict;
     {
         NSTimer *timer = [timersDict objectForKey:@"timer"];
         [timer invalidate];
+        [timersDict removeObjectForKey:@"timer"];
     }
 }
 
 - (void)sendVerificationCode:(UITapGestureRecognizer *)tap
 {
     [timeIntervalDict setObject:[NSDate date] forKey:@"startDate"];
-    self.verificationCodeLabel.text = [NSString stringWithFormat:@"%d", 60];
     
+    [self startTimer];
+}
+
+- (void)startTimer
+{
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(cutDownTime:) userInfo:nil repeats:YES];
     
     [timersDict setObject:self.timer forKey:@"timer"];
@@ -83,21 +86,25 @@ static NSMutableDictionary *timersDict;
 
 - (void)cutDownTime:(NSTimer *)time
 {
-    if(!timeIntervalDict)
+    if(timeIntervalDict.count == 0)
     {
         return;
     }
     
     NSDate *startDate = timeIntervalDict[@"startDate"];
-    NSTimeInterval labelTime = 60 - ([[NSDate date] timeIntervalSince1970]- [startDate timeIntervalSince1970]);
+    NSTimeInterval labelTime = 20 - ([[NSDate date] timeIntervalSince1970]- [startDate timeIntervalSince1970]);
     
-    self.verificationCodeLabel.text = [NSString stringWithFormat:@"%.0f", labelTime];
-    
-    if(labelTime < 0)
+    if(labelTime <= 0)
     {
         self.verificationCodeLabel.text = @"重新获取";
+        self.verificationCodeLabel.userInteractionEnabled = YES;
         [timeIntervalDict removeAllObjects];
         [self.timer invalidate];
+    }
+    else
+    {
+        self.verificationCodeLabel.userInteractionEnabled = NO;
+        self.verificationCodeLabel.text = [NSString stringWithFormat:@"%.0f", labelTime];
     }
 }
 

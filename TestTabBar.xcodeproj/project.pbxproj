@@ -13,6 +13,8 @@
 		FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */; };
 		FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57461D01748D00AB6C6F /* RegisterViewController.m */; };
 		FE0F574A1D0181D500AB6C6F /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57491D0181D500AB6C6F /* RootTabBarViewController.m */; };
+		FE1706941D06A9F600A61694 /* countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1706931D06A9F600A61694 /* countdown.m */; };
+		FE26C2241D0E590C007A31DE /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE26C2231D0E590C007A31DE /* GuideViewController.m */; };
 		FEDEA0701CF7586A00298B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA06F1CF7586A00298B10 /* main.m */; };
 		FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0721CF7586A00298B10 /* AppDelegate.m */; };
 		FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0751CF7586A00298B10 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 		FE0F57461D01748D00AB6C6F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		FE0F57481D0181D500AB6C6F /* RootTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBarViewController.h; sourceTree = "<group>"; };
 		FE0F57491D0181D500AB6C6F /* RootTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarViewController.m; sourceTree = "<group>"; };
+		FE1706921D06A9F600A61694 /* countdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = countdown.h; sourceTree = "<group>"; };
+		FE1706931D06A9F600A61694 /* countdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = countdown.m; sourceTree = "<group>"; };
+		FE26C2221D0E590C007A31DE /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		FE26C2231D0E590C007A31DE /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		FEDEA06B1CF7586A00298B10 /* TestTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDEA06F1CF7586A00298B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEDEA0711CF7586A00298B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 				FE0F57391D01607D00AB6C6F /* LoginViewController.m */,
 				FE0F57451D01748D00AB6C6F /* RegisterViewController.h */,
 				FE0F57461D01748D00AB6C6F /* RegisterViewController.m */,
+				FE26C2221D0E590C007A31DE /* GuideViewController.h */,
+				FE26C2231D0E590C007A31DE /* GuideViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -90,6 +98,23 @@
 			path = ThirdLib;
 			sourceTree = "<group>";
 		};
+		FE17068F1D06A99600A61694 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FE1706901D06A99600A61694 /* Countdown */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FE1706901D06A99600A61694 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				FE1706921D06A9F600A61694 /* countdown.h */,
+				FE1706931D06A9F600A61694 /* countdown.m */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
 		FEDEA0621CF7586A00298B10 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +123,7 @@
 				FE0F57481D0181D500AB6C6F /* RootTabBarViewController.h */,
 				FE0F57491D0181D500AB6C6F /* RootTabBarViewController.m */,
 				FE0F573E1D01742500AB6C6F /* ThirdLib */,
+				FE17068F1D06A99600A61694 /* Common */,
 				FE0F57371D01606000AB6C6F /* Login */,
 				FEF57B521CFF4A5E006D8BFF /* 哈哈 */,
 				FEF57B511CFF4A5E006D8BFF /* 呵呵 */,
@@ -247,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */,
+				FE26C2241D0E590C007A31DE /* GuideViewController.m in Sources */,
 				FE0F57411D01743300AB6C6F /* IQKeyboardManager.m in Sources */,
 				FE0F573A1D01607D00AB6C6F /* LoginViewController.m in Sources */,
 				FEF57B631CFF4DB4006D8BFF /* YeYeController.m in Sources */,
@@ -255,6 +282,7 @@
 				FEF57B5A1CFF4D78006D8BFF /* HaHaController.m in Sources */,
 				FEF57B601CFF4DA2006D8BFF /* HeiHeiController.m in Sources */,
 				FE0F574A1D0181D500AB6C6F /* RootTabBarViewController.m in Sources */,
+				FE1706941D06A9F600A61694 /* countdown.m in Sources */,
 				FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */,
 				FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */,
 				FEDEA0701CF7586A00298B10 /* main.m in Sources */,

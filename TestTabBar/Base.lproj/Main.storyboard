@@ -31,7 +31,7 @@
         <!--哈哈-->
         <scene sceneID="aMH-rk-uSP">
             <objects>
-                <tableViewController id="bll-Yr-gSS" sceneMemberID="viewController">
+                <tableViewController id="bll-Yr-gSS" customClass="HaHaController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fck-qZ-T0S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--呵呵-->
         <scene sceneID="YHH-AB-Tez">
             <objects>
-                <tableViewController id="Rqw-bC-W7c" sceneMemberID="viewController">
+                <tableViewController id="Rqw-bC-W7c" customClass="HeHeController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="呵呵" id="LAj-jU-4BR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
@@ -93,7 +93,7 @@
         <scene sceneID="One-DQ-CxW">
             <objects>
                 <navigationController id="1m6-FI-3oz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="呵呵" image="deal" selectedImage="deal_selected" id="3ab-JV-quM"/>
+                    <tabBarItem key="tabBarItem" title="呵呵" image="deal" id="3ab-JV-quM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="u2c-TS-pf1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -110,7 +110,7 @@
         <!--嘿嘿-->
         <scene sceneID="lKS-80-6o1">
             <objects>
-                <tableViewController id="OmI-5A-OoQ" sceneMemberID="viewController">
+                <tableViewController id="OmI-5A-OoQ" customClass="HeiHeiController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="u8X-Zb-m6G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
         <scene sceneID="wIU-er-nEi">
             <objects>
                 <navigationController id="nqF-Be-aKI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="嘿嘿" image="record" selectedImage="deal_selected" id="xxb-TN-iyH"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="嘿嘿" image="record" id="xxb-TN-iyH"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJT-11-MOR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -148,7 +148,7 @@
         <!--耶耶-->
         <scene sceneID="ZSg-aw-tdB">
             <objects>
-                <tableViewController hidesBottomBarWhenPushed="YES" id="cAe-gG-c5y" sceneMemberID="viewController">
+                <tableViewController id="cAe-gG-c5y" customClass="YeYeController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wvx-m6-oq9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -187,7 +187,8 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="y6i-nL-EyD" kind="show" identifier="LoginViewController" id="Lae-ys-eOD"/>
+                                                        <action selector="touchQuitButton:" destination="cAe-gG-c5y" eventType="touchUpInside" id="Dgj-HB-5xD"/>
+                                                        <segue destination="y6i-nL-EyD" kind="show" id="Cu0-Vc-hZu"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -239,7 +240,9 @@
         <!--Login-->
         <scene sceneID="mXV-qL-CVN">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" id="y6i-nL-EyD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Login" id="y6i-nL-EyD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QIb-fZ-1hU"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBP-n2-oun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-908.25" y="1832.25"/>
@@ -248,7 +251,7 @@
         <scene sceneID="sx2-8H-6FC">
             <objects>
                 <navigationController id="lEH-ol-zOB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="耶耶" image="me" selectedImage="deal_selected" id="tHK-7L-c26"/>
+                    <tabBarItem key="tabBarItem" title="耶耶" image="me" selectedImage="me_selected" id="tHK-7L-c26"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NCP-ev-8Tc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -266,7 +269,7 @@
         <scene sceneID="0vQ-8Y-3fJ">
             <objects>
                 <navigationController id="YH7-1i-0C9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="哈哈" image="currency" selectedImage="currency_selected" id="erY-J9-p4f"/>
+                    <tabBarItem key="tabBarItem" title="哈哈" image="currency" id="erY-J9-p4f"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="StX-sc-i8H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -283,10 +286,9 @@
     </scenes>
     <resources>
         <image name="currency" width="19" height="19"/>
-        <image name="currency_selected" width="19" height="19"/>
         <image name="deal" width="19" height="19"/>
-        <image name="deal_selected" width="19" height="19"/>
         <image name="me" width="19" height="19"/>
+        <image name="me_selected" width="19" height="19"/>
         <image name="record" width="19" height="19"/>
     </resources>
 </document>

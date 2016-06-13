@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
+    //注意这里不能用 self.tabBarController.tabBar.tintColor
+    self.tabBar.tintColor = [UIColor purpleColor];
 }
 
 @end
