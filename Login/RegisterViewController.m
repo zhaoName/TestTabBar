@@ -11,7 +11,6 @@
 
 static NSMutableDictionary *timeIntervalDict;
 
-
 @interface RegisterViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextField;
@@ -20,17 +19,11 @@ static NSMutableDictionary *timeIntervalDict;
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 @property (nonatomic, strong) NSTimer *timer;
 
-
 - (IBAction)touchRegisterButton:(UIButton *)sender;
 
 @end
 
 @implementation RegisterViewController
-
-- (void)viewDidLayoutSubviews
-{
-    
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,24 +48,39 @@ static NSMutableDictionary *timeIntervalDict;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    [self startTimer];
+#if 0
+    if(timeIntervalDict[@"startDate"])
+    {
+        self.verificationCodeLabel.text = [NSString stringWithFormat:@"%.0f", 20 - [[NSDate date] timeIntervalSinceDate:timeIntervalDict[@"startDate"]]];
+        
+        [self startTimer];
+    }
+#elif 1
+    [countdown showCountdownWithKey:@"startTime" OnLabel:self.verificationCodeLabel forceStart:NO];
+#endif
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+#if 0
     [self.timer invalidate];
+#elif 1
+    //取消GCD定时器
+    [countdown invalidate];
+#endif
 }
 
 - (void)sendVerificationCode:(UITapGestureRecognizer *)tap
 {
+#if 0
+    //NSTimer定时器
     [timeIntervalDict setObject:[NSDate date] forKey:@"startDate"];
-    
     [self startTimer];
-    
-    //[countdown startTimerWithKey:@"startTime" andLabel:self.verificationCodeLabel];
+#elif 1
+    //GCD定时器
+    [countdown startTimerWithKey:@"startTime" andLabel:self.verificationCodeLabel];
+#endif
 }
 
 - (void)startTimer
@@ -82,24 +90,23 @@ static NSMutableDictionary *timeIntervalDict;
 
 - (void)cutDownTime:(NSTimer *)time
 {
-    if(timeIntervalDict.count == 0)
-    {
-        return;
-    }
+    if(timeIntervalDict.count == 0) return;
     
     NSDate *startDate = timeIntervalDict[@"startDate"];
-    NSTimeInterval labelTime = 20 - ([[NSDate date] timeIntervalSince1970]- [startDate timeIntervalSince1970]);
+    NSTimeInterval labelTime = 20 - [[NSDate date] timeIntervalSinceDate:startDate];
     
-    if(labelTime <= 0)
+    if(labelTime < 0)
     {
-        self.verificationCodeLabel.text = @"重新获取";
+        self.verificationCodeLabel.text = [NSString stringWithFormat:@"重新获取"];
         self.verificationCodeLabel.userInteractionEnabled = YES;
+        self.verificationCodeLabel.backgroundColor = [UIColor colorWithRed:30/255.0 green:150/255.0 blue:160/255.0 alpha:1];
         [timeIntervalDict removeAllObjects];
         [self.timer invalidate];
     }
     else
     {
         self.verificationCodeLabel.userInteractionEnabled = NO;
+        self.verificationCodeLabel.backgroundColor = [UIColor colorWithRed:80/255.0 green:160/255.0 blue:160/255.0 alpha:1];
         self.verificationCodeLabel.text = [NSString stringWithFormat:@"%.0f", labelTime];
     }
 }
@@ -110,5 +117,11 @@ static NSMutableDictionary *timeIntervalDict;
     
 }
 
+
+//收起键盘
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 
 @end

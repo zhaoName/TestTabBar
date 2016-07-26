@@ -10,4 +10,6 @@
 
 @interface HaHaController : UITableViewController
 
+@property (nonatomic, strong) NSString *name;
+
 @end

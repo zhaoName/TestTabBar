@@ -19,6 +19,8 @@
     
     //注意这里不能用 self.tabBarController.tabBar.tintColor
     self.tabBar.tintColor = [UIColor purpleColor];
+    
+    NSLog(@"===%@", NSStringFromClass([[self.viewControllers objectAtIndex:2] class]));
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "HaHaController.h"
+#import <MJRefresh.h>
 
 @interface HaHaController ()
 
@@ -28,6 +29,19 @@
     //设置状态栏字体颜色
     //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
+    self.name = @"fuck";
+    
+    [self createRefreshHeader];
+}
+
+
+- (void)createRefreshHeader
+{
+    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+       
+        
+        
+    }];
 }
 
 

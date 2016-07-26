@@ -326,7 +326,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发送验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-PD-WrP">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" red="0.12197952252654298" green="0.58136473191889759" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1195413933319121" green="0.58136473191889593" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="JNa-Tn-0be"/>
                                     <constraint firstAttribute="height" constant="25" id="o8H-k2-kCn"/>

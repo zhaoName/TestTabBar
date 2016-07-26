@@ -1,12 +1,15 @@
 PODS:
   - MJExtension (3.0.10)
+  - MJRefresh (3.1.10)
 
 DEPENDENCIES:
   - MJExtension (~> 3.0.10)
+  - MJRefresh (~> 3.1.10)
 
 SPEC CHECKSUMS:
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: bb72948c985914b0b5cecac573a2c69a8915fb02
 
-PODFILE CHECKSUM: 80a630997c9afa3cb4a3ad406f1f6d0093feb210
+PODFILE CHECKSUM: eabb90d7b64fc97102350f06482b924a3c99da48
 
 COCOAPODS: 1.0.1
