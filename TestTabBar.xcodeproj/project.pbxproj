@@ -16,6 +16,7 @@
 		FE0F574A1D0181D500AB6C6F /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57491D0181D500AB6C6F /* RootTabBarViewController.m */; };
 		FE1706941D06A9F600A61694 /* countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1706931D06A9F600A61694 /* countdown.m */; };
 		FE26C2241D0E590C007A31DE /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE26C2231D0E590C007A31DE /* GuideViewController.m */; };
+		FECB74DC1D65501A00A70AC3 /* BackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECB74DB1D65501A00A70AC3 /* BackViewController.m */; };
 		FEDEA0701CF7586A00298B10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA06F1CF7586A00298B10 /* main.m */; };
 		FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0721CF7586A00298B10 /* AppDelegate.m */; };
 		FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDEA0751CF7586A00298B10 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 		FE1706931D06A9F600A61694 /* countdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = countdown.m; sourceTree = "<group>"; };
 		FE26C2221D0E590C007A31DE /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		FE26C2231D0E590C007A31DE /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		FECB74DA1D65501A00A70AC3 /* BackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackViewController.h; sourceTree = "<group>"; };
+		FECB74DB1D65501A00A70AC3 /* BackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackViewController.m; sourceTree = "<group>"; };
 		FEDEA06B1CF7586A00298B10 /* TestTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDEA06F1CF7586A00298B10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEDEA0711CF7586A00298B10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			children = (
 				FEF57B581CFF4D78006D8BFF /* HaHaController.h */,
 				FEF57B591CFF4D78006D8BFF /* HaHaController.m */,
+				FECB74DA1D65501A00A70AC3 /* BackViewController.h */,
+				FECB74DB1D65501A00A70AC3 /* BackViewController.m */,
 			);
 			path = "哈哈";
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				FE0F574A1D0181D500AB6C6F /* RootTabBarViewController.m in Sources */,
 				FE1706941D06A9F600A61694 /* countdown.m in Sources */,
 				FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */,
+				FECB74DC1D65501A00A70AC3 /* BackViewController.m in Sources */,
 				FEDEA0731CF7586A00298B10 /* AppDelegate.m in Sources */,
 				FEDEA0701CF7586A00298B10 /* main.m in Sources */,
 			);
