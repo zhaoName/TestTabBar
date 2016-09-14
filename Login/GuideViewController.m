@@ -41,14 +41,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"%f", scrollView.contentOffset.x);
-    
     if(scrollView.contentOffset.x > WIDTH * 2 + 30)
     {
-        [[NSUserDefaults standardUserDefaults] setObject:@"guide" forKey:@"guide"];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        self.guideBlock();
+        self.guideBlock(); //引导页展示完后显示登录界面
     }
 }
 
@@ -65,7 +60,6 @@
         
         _scrollView.contentSize = CGSizeMake(WIDTH * 3, HEIGHT);
         _scrollView.delegate = self;
-        //_scrollView.backgroundColor = [UIColor lightGrayColor];
     }
     return _scrollView;
 }

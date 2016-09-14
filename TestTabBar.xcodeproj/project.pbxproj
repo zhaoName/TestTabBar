@@ -10,7 +10,6 @@
 		650F105A56331B2BE434CF92 /* libPods-TestTabBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B333391943F4A143052C63B /* libPods-TestTabBar.a */; };
 		FE0F57361D014F8400AB6C6F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0F57351D014F8400AB6C6F /* Login.storyboard */; };
 		FE0F573A1D01607D00AB6C6F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57391D01607D00AB6C6F /* LoginViewController.m */; };
-		FE0F57411D01743300AB6C6F /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */; };
 		FE0F57441D01743A00AB6C6F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */; };
 		FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57461D01748D00AB6C6F /* RegisterViewController.m */; };
 		FE0F574A1D0181D500AB6C6F /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0F57491D0181D500AB6C6F /* RootTabBarViewController.m */; };
@@ -36,8 +35,6 @@
 		FE0F57351D014F8400AB6C6F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FE0F57381D01607D00AB6C6F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FE0F57391D01607D00AB6C6F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		FE0F573F1D01743300AB6C6F /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
-		FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
 		FE0F57421D01743A00AB6C6F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE0F57451D01748D00AB6C6F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -115,8 +112,6 @@
 		FE0F573E1D01742500AB6C6F /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
-				FE0F573F1D01743300AB6C6F /* IQKeyboardManager.h */,
-				FE0F57401D01743300AB6C6F /* IQKeyboardManager.m */,
 				FE0F57421D01743A00AB6C6F /* MBProgressHUD.h */,
 				FE0F57431D01743A00AB6C6F /* MBProgressHUD.m */,
 			);
@@ -354,7 +349,6 @@
 			files = (
 				FE0F57471D01748D00AB6C6F /* RegisterViewController.m in Sources */,
 				FE26C2241D0E590C007A31DE /* GuideViewController.m in Sources */,
-				FE0F57411D01743300AB6C6F /* IQKeyboardManager.m in Sources */,
 				FE0F573A1D01607D00AB6C6F /* LoginViewController.m in Sources */,
 				FEF57B631CFF4DB4006D8BFF /* YeYeController.m in Sources */,
 				FEDEA0761CF7586A00298B10 /* ViewController.m in Sources */,

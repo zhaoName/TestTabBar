@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-#import "IQKeyboardManager.h"
 #import "RootTabBarViewController.h"
 #import "GuideViewController.h"
+
+#define VERSIONKEY @"CFBundleShortVersionString" //版本号
 
 @interface AppDelegate ()
 
@@ -21,14 +22,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //[[UITabBar appearance] setTintColor:[UIColor redColor]];
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    if(![[NSUserDefaults standardUserDefaults] objectForKey:@"guide"])
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:VERSIONKEY];
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[VERSIONKEY];
+    if(![lastVersion isEqualToString:currentVersion]) //若两次的版本号不同，则显示引导页
     {
         [self showGuide];
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:VERSIONKEY];
     }
     else
     {
@@ -40,12 +42,7 @@
         {
             [self showLogin];
         }
-
     }
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"phone"]);
-    
-    [[IQKeyboardManager sharedManager] setEnable:YES];
-    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 50.0;
     
     [self.window makeKeyAndVisible];
     
